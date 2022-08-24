@@ -1,0 +1,138 @@
+/* Основний шрифт Roboto */
+/* Колір тексту 212121, активний текст 2196F3 */
+body {
+  color: #212121;
+  font-family: ARIAL, sans-serif, Arial, Helvetica; /*DON'T FORGET TO CHANGE FONT TO ROBOTO!!! */
+  font-size: 14px;
+}
+
+/* Розмічаємо лого студії */
+.text-logo-url {
+  font-family: Raleway, sans-serif, Arial, Helvetica;
+  font-size: 26px;
+  font-weight: 700;
+  text-decoration: none;
+}
+/* .text-logo-url:visited {
+  text-decoration: none;
+} */
+.logo-color1 {
+  color: #2196f3;
+}
+.logo-color2 {
+  color: #000000;
+}
+
+/* Розмічаємо головне меню */
+
+.main-menu-list a {
+  text-decoration: none;
+  text-shadow: none;
+}
+
+.main-menu-list {
+  font-size: 14px;
+  list-style-type: none;
+}
+
+.main-menu-list :visited {
+  color: #212121;
+  text-shadow: none;
+}
+
+.main-menu-list :hover,
+.main-menu-list :focus {
+  color: #2196f3;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Розмічуємо мейл та телефон в футері */
+.header-email-phone {
+  list-style-type: none;
+}
+
+.header-email-phone a {
+  color: #757575;
+  text-decoration: none;
+}
+
+.header-email-phone :hover,
+.header-email-phone :focus {
+  color: #2196f3;
+}
+
+/* MAIN BANNER */
+.main-banner {
+  font-size: 44px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #2f303a;
+}
+
+/* Назва секції - невідима */
+.hidden-header {
+  display: none;
+}
+
+/* Список переваг */
+.section-features-list {
+  list-style-type: none;
+}
+
+/* Назва секції - відима */
+.section-name {
+  font-size: 36px;
+  font-weight: 700;
+  color: #212121; /* equals to body  */
+  text-align: center;
+}
+
+.section-features-list-header {
+  font-weight: 700;
+}
+.section-features-list-content {
+  font-weight: 400;
+  color: #757575;
+}
+
+.section-we-doing-list {
+  list-style-type: none;
+}
+
+/* Картка працівника */
+.section-team-mate-list {
+  list-style-type: none;
+}
+.team-mate-name {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+}
+.team-mate-position {
+  font-weight: 400;
+  font-size: 16px;
+  color: #757575;
+  text-align: center;
+}
+
+/* Розмічаємо Підвал  */
+
+.footer-addr-block {
+  list-style-type: none;
+}
+
+.studio-address {
+  font-size: 14px;
+  font-style: normal;
+}
+
+.footer-addr-text {
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.footer-addr {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #2f303a;
+}

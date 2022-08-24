@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Студія</title>
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -19,7 +20,7 @@
 
       <ul class="main-menu-list">
         <li><a href="#">Студія</a></li>
-        <li><a href="#">Портфоліо</a></li>
+        <li><a href="portfolio.html" target="_blank">Портфоліо</a></li>
         <li><a href="#">Контакти</a></li>
       </ul>
     </nav>
@@ -85,15 +86,16 @@
         </li>
       </ul>
     </section>
+
     <!--РОЗДІЛ ЧИМ ЗАЙМАЄМОСЯ-->
     <section class="section-we-doing">
       <h2 class="section-name">
         Чим ми займаємося
       </h2>
       <ul class="section-we-doing-list">
-        <li><img class="section-we-doing-li" src="images/box1.jpg" alt="Десктоп" width="370"></li>
-        <li><img class="section-we-doing-li" src="images/box2.jpg" alt="Мобільний телефон" width="370"></li>
-        <li><img class="section-we-doing-li" src="images/box3.jpg" alt="Планшет" width="370"></li>
+        <li><img class="section-we-doing" src="images/box1.jpg" alt="Десктоп" width="370"></li>
+        <li><img class="section-we-doing" src="images/box2.jpg" alt="Мобільний телефон" width="370"></li>
+        <li><img class="section-we-doing" src="images/box3.jpg" alt="Планшет" width="370"></li>
       </ul>
     </section>
     <!--РОЗДІЛ НАША КОМАНДА-->
@@ -102,8 +104,8 @@
         Наша команда
       </h2>
       <!--team-mate1-->
-      <ul class="team-mate-list">
-        <li class="team-mate-li">
+      <ul class="section-team-mate-list">
+        <li class="team-mate">
           <img class="team-mate-pic" src="images/tm1.jpg" alt="Ігор" width="270">
           <h3 class="team-mate-name">
             Ігор Дем'яненко
@@ -112,7 +114,7 @@
             Product Designer
           </p>
         </li>
-        <li class="team-mate-li">
+        <li class="team-mate">
           <!--team-mate2-->
           <img class="team-mate-pic" src="images/tm2.jpg" alt="Ольга" width="270">
           <h3 class="team-mate-name">
@@ -122,7 +124,7 @@
             Frontend Developer
           </p>
         </li>
-        <li class="team-mate-li">
+        <li class="team-mate">
           <!--team-mate3-->
           <img class="team-mate-pic" src="images/tm3.jpg" alt="Микола" width="270">
           <h3 class="team-mate-name">
@@ -132,7 +134,7 @@
             Marketing
           </p>
         </li>
-        <li class="team-mate-li">
+        <li class="team-mate">
           <!--team-mate4-->
           <img class="team-mate-pic" src="images/tm4.jpg" alt="Михайло" width="270">
           <h3 class="team-mate-name">
@@ -153,16 +155,16 @@
       </a>
     </div>
     <!-- Адреса студії-->
-    <address>
+    <address class="studio-address">
       <ul class="footer-addr-block">
         <li class="footer-addr-text">
           <a href="https://www.google.com/maps/d/u/0/viewer?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&ll=50.42732700000001%2C30.538092&z=17"
             target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a>
         </li>
-        <li>
+        <li class="footer-addr">
           info@devstudio.com
         </li>
-        <li>
+        <li class="footer-addr">
           +38 096 111-11-11
         </li>
       </ul>
