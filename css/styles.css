@@ -3,6 +3,7 @@
   --article-text-color: #757575;
   --accent-color: #2196f3;
   --primary-background-color: #ffffff;
+  --primary-background-color-transp: rgba(255, 255, 255, 0.6);
   --secondary-background-color: #f5f4fa;
 
   --banner-color: #2f303a;
@@ -36,6 +37,7 @@ body {
   font-family: 'Raleway', 'Arial', sans-serif;
   font-size: 26px;
   font-weight: 700;
+  line-height: 1.19em;
   text-decoration: none;
 }
 .text-logo-url .logo-color1 {
@@ -65,6 +67,16 @@ body {
   color: var(--accent-color);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+.main-menu-item a:visited {
+  font-weight: 500;
+  line-height: 1.14em;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  text-shadow: none;
+
+  color: var(--title-text-color);
+}
+
 
 /* Розмічуємо мейл та телефон в футері */
 
@@ -190,34 +202,46 @@ body {
   height: 252px;
 }
 .footer-addr-text-style1 a {
-  
+  line-height: 1.71em;
   text-decoration: none;
   font-style: normal;
 
   color: var(--logo-color-contrast)
 }
 .footer-addr-text-style2 a {
- 
+  line-height: 1.71em;
   text-decoration: none;
   font-style: normal;
 
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--primary-background-color-transp);
+}
+
+/* виділяємо посилання у підвалі */
+.footer-addr-text-style1 a:hover,
+.footer-addr-text-style1 a:focus,
+.footer-addr-text-style2 a:hover,
+.footer-addr-text-style2 a:focus
+{
+  color: var(--accent-color);
 }
 
 /* Стилізуємо портфоліо */
 
 .portfolio-card-link {
+  color: var(--title-text-color);
   text-decoration: none;
 }
 
 .portfolio-item-title {
   font-weight: 700;
   font-size: 18px;
-  color: var(--title-text-color);
+  line-height: 2em;
+  letter-spacing: 0.06em;
+
 }
 
 .portfolio-industry {
-  font-weight: 400;
   font-size: 16px;
-  color: var(--title-text-color);
+  line-height: 1.08em;
+  color: var(--article-text-color)
 }
