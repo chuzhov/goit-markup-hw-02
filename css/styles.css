@@ -11,102 +11,126 @@
   --logo-color-tail: #000000;
   --logo-color-contrast: #ffffff;
 }
-/* Основний шрифт Roboto */
-/* Колір тексту 212121, активний текст 2196F3 */
+
+
+/* БАЗОВІ ЕЛЕМЕНТИ ДІЗАЙНУ */
 body {
+  font-family: "Roboto", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.17em;
+  letter-spacing: 0.03em;  
+
   color: var(--title-text-color);
   background-color: var(--primary-background-color);
-  font-family: 'Roboto', sans-serif, Arial, Helvetica;
-  font-size: 14px;
 }
 
+/* Допоможний клас, що видаляє плашки у списках */
 .no-bullets li {
   list-style-type: none;
 }
 
 /* Розмічаємо лого студії */
 .text-logo-url {
-  font-family: 'Raleway', sans-serif, Arial, Helvetica;
+  font-family: 'Raleway', 'Arial', sans-serif;
   font-size: 26px;
   font-weight: 700;
   text-decoration: none;
 }
-.logo-color1 {
+.text-logo-url .logo-color1 {
   color: var(--logo-color-head);
 }
-.logo-color2 {
+.text-logo-url .logo-color2 {
   color: var(--logo-color-tail);
 }
-.logo-color3 {
+.text-logo-url .logo-color3 {
   color: var(--logo-color-contrast); /*для футера */
 }
 
 /* Розмічаємо головне меню */
 
 .main-menu-item {
+  font-weight: 500;
+  line-height: 1.14em;
+  letter-spacing: 0.02em;
   text-decoration: none;
   text-shadow: none;
+
   color: var(--title-text-color);
 }
 
-.main-menu-item:hover {
+.main-menu-item:hover,
+.main-menu-item:focus {
   color: var(--accent-color);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* Розмічуємо мейл та телефон в футері */
 
-.header-email-phone a {
+.link-email-phone a {
   color: var(--article-text-color);
   text-decoration: none;
 }
 
-.header-email-phone a:hover,
-.header-email-phone a:focus {
+.link-email-phone a:hover,
+.link-email-phone a:focus {
   color: var(--accent-color);
 }
 
 /* MAIN BANNER */
-.main-banner {
-  font-size: 44px;
-  font-weight: 900;
-  color: var(--primary-background-color);
-  text-align: center;
-  text-transform: uppercase;
+
+.hero {
   background-color: var(--banner-color);
 }
 
-/* Колись ми повністю розмітимо цю кнопку */
-.button {
+.main-banner {
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36em;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+  
   color: var(--primary-background-color);
-  font-size: 16px;
-  background-color: var(--accent-color);
-  /* border-style: ???; */
-  border-radius: 4;
-  border-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+/* Кнопка замовлення * */
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.88em;
+  letter-spacing: 0.06em;
+  text-align: center;
+ 
+}
 .button.primary {
   color: var(--primary-background-color);
   background-color: var(--accent-color);
 }
-
 .button.secondary {
   color: var(--title-text-color);
-  background-color: var(--primary-background-color);
+  background-color: var(--secondary-background-color);
 }
 
 /* кнопки чекбокси в Портфоліо */
 .filter-button {
+  font-family: inherit;
   font-size: 16px;
   font-weight: 500;
+  line-height: 1.63em;
+  letter-spacing: 0.03em;
+}
+
+.filter-button.primary {
+  color: var(--primary-background-color);
+  background-color: var(--accent-color);
+}
+
+.filter-button.secondary {
   color: var(--title-text-color);
   background-color: var(--secondary-background-color);
-
-  /* border-style: ???;
-  border-radius: 4;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
 }
 
 /* Елемент фільтру при ховері чі у фокусі */
@@ -118,67 +142,66 @@ body {
 }
 
 /* Назва секції - невідима */
-/* Скриваємо логічний заголовок секції, якого немає на екрані */
+/* sec 2 Скриваємо логічний заголовок секції, якого немає на екрані */
 .hidden-header {
   display: none;
 }
 
-/* Список переваг */
+/* sec2 h3 Список переваг */
 .section-features-list-header {
   font-weight: 700;
+  line-height: 1.14em;
+ 
   text-transform: uppercase;
-  /* color: #212121;   стандартний колір із Баді*/
+}
+.section-features-list-content {
+  line-height: 1.71em;
+
+  color: var(--article-text-color);
 }
 
-/* Назва секції - відима */
+/* sec 3, 4 Назва секції - відима */
 .section-name {
   font-size: 36px;
   font-weight: 700;
-  /* color: #212121; стандартний колір body  */
   text-align: center;
 }
 
-.section-features-list-header {
-  font-weight: 700;
-}
-.section-features-list-content {
-  font-weight: 400;
-  color: var(--article-text-color);
-}
+/* sec4 Картка працівника */
 
-/* Картка працівника */
-.section-team-mate-list {
-  list-style-type: none;
-}
 .team-mate-name {
   font-weight: 500;
   font-size: 16px;
+  line-height: 1.19em;
   text-align: center;
 }
 .team-mate-position {
-  font-weight: 400;
   font-size: 16px;
-  color: var(--article-text-color);
+  line-height: 1.19em;
   text-align: center;
+
+  color: var(--article-text-color);
 }
 
 /* Розмічаємо Підвал  */
 
 .page-footer {
-  background-color: #2f303a;
+  background-color: var(--banner-color);
   height: 252px;
 }
 .footer-addr-text-style1 a {
-  color: #ffffff;
+  
   text-decoration: none;
   font-style: normal;
-  font-weight: 400;
+
+  color: var(--logo-color-contrast)
 }
 .footer-addr-text-style2 a {
-  color: rgba(255, 255, 255, 0.6);
+ 
   text-decoration: none;
   font-style: normal;
-  font-weight: 400;
+
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /* Стилізуємо портфоліо */
