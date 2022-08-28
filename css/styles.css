@@ -18,8 +18,8 @@
 body {
   font-family: "Roboto", "Helvetica Neue", sans-serif;
   font-size: 14px;
-  font-weight: 400;
-  font-style: normal;
+  /* font-weight: 400; browser default*/
+  /* font-style: normal; */
   line-height: 1.17em;
   letter-spacing: 0.03em;  
 
@@ -59,7 +59,7 @@ body {
   text-decoration: none;
   text-shadow: none;
 
-  color: var(--title-text-color);
+  color: var(--title-text-color);  /*не наслідується бо посилання */
 }
 
 .main-menu-item:hover,
@@ -67,16 +67,6 @@ body {
   color: var(--accent-color);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.main-menu-item a:visited {
-  font-weight: 500;
-  line-height: 1.14em;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  text-shadow: none;
-
-  color: var(--title-text-color);
-}
-
 
 /* Розмічуємо мейл та телефон в футері */
 
@@ -115,6 +105,8 @@ body {
   line-height: 1.88em;
   letter-spacing: 0.06em;
   text-align: center;
+
+  cursor: pointer;
  
 }
 .button.primary {
@@ -133,6 +125,8 @@ body {
   font-weight: 500;
   line-height: 1.63em;
   letter-spacing: 0.03em;
+
+  cursor: pointer;
 }
 
 .filter-button.primary {
@@ -156,7 +150,7 @@ body {
 /* Назва секції - невідима */
 /* sec 2 Скриваємо логічний заголовок секції, якого немає на екрані */
 .hidden-header {
-  display: none;
+  display: none; /*тимчасове рішення*/
 }
 
 /* sec2 h3 Список переваг */
