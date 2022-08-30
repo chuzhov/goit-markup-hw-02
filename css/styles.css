@@ -62,6 +62,7 @@ body {
   color: var(--title-text-color);  /*не наслідується бо посилання */
 }
 
+.current-menu-item,
 .main-menu-item:hover,
 .main-menu-item:focus {
   color: var(--accent-color);
@@ -71,8 +72,9 @@ body {
 /* Розмічуємо мейл та телефон в футері */
 
 .link-email-phone a {
-  color: var(--article-text-color);
+  font-weight: 500;
   text-decoration: none;
+  color: var(--article-text-color);
 }
 
 .link-email-phone a:hover,
@@ -97,7 +99,7 @@ body {
   color: var(--primary-background-color);
 }
 
-/* Кнопка замовлення * */
+/* Кнопка замовлення */
 .button {
   font-family: inherit;
   font-size: 16px;
@@ -155,6 +157,7 @@ body {
 
 /* sec2 h3 Список переваг */
 .section-features-list-header {
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.14em;
  
